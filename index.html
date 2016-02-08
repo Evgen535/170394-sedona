@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Седона</title>
 </head>
 <body>
   <div class="container">
     <header>
       <nav class="main-navigation">
         <ul>
-          <li>информация </li>
-          <li>фото и видео</li>
-          <li>карта штата</li>
-          <li>гостиницы</li>
+          <li>
+            <a href= "#">информация </a>
+          </li>
+          <li>
+            <a href="#">фото и видео</a>
+          </li>
+          <li>
+            <a href="#">карта штата</a>
+          </li>
+          <li>
+            <a href="#">гостиницы</a>
+          </li>
         </ul>
-
-        <figure>
-          <a href="#"><img src="#" alt="" />logotip
-</a>
+        <figure class="index-logo">
+          <img src="img/index-logo.png" alt="logo">
         </figure>
       </nav>
-
       <div class="main-promo">
-        <img src="#" alt="">welkom sedona
+        <img src="#" alt="welkom sedona">
       </div>
     </header>
-
     <main class="content">
-      <h1>седона — небольшой городок в аризоне,
+      <h1 class="content-reason-advertising">седона — небольшой городок в аризоне,
           заслуживащий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-
+      <div class="reasons">
+      <p class="reasons-five">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       <div class="reasons">
         <div class="reason-row reason-row-image">
           <div class="reason reason-blue">
@@ -39,49 +44,48 @@
             <p>седона-не атракцион для туристов,
                 там течет своя жизнь</p>
           </div>
-          <figure><img src="" alt="">real town</figure>
         </div>
+          <figure class="block house"><img src="" alt="real town"></figure>
+
         <div class="reason-row reason-row-icon">
           <div class="reason reason-icon reason-icon-house">
-              <div>жилье</div>
-              <div>рекомендуем пожить в настоящем отеле!</div>
+              <b>жилье</b>
+              <p>рекомендуем пожить в настоящем отеле!</p>
           </div>
           <div class="reason reason-icon reason-icon-hamburger">
-              <div>Еда</div>
-              <div>всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
+              <b>Еда</b>
+              <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="reason reason-icon reason-icon-gift">
-              <div>сувениры</div>
-              <div>не только китайского но и местного производства!</div>
+              <b>сувениры</b>
+              <p>не только китайского но и местного производства!</p>
         </div>
-        </div>
+           </div>
         <div class="reason-row reason-row-image reason-row-invert">
           <div class="reason reason-blue">
             <b>там есть мост дьявола</b>
             <div>№ 2</div>
-            <div>да по нему можно пройти,
-              если конечно вы осмелитесь!</div  >
+            <p>да по нему можно пройти,
+              если конечно вы осмелитесь!</p>
           </div>
-          <figure><img src="" alt="">devil's bridge</figure>
+          <figure class="devil's bridge"><img src="" alt="devil's bridge"></figure>
         </div>
         <div class="reason-row reason-row-gray">
-          <div class="reason">небольшая площадь</div>
+          <div class="reason attractions">небольшая площадь</div>
             <div>№3</div>
-            <div>все достопримечательности находятся очень близко</div>
-          <div class="reason">красивая дорога!</div>
+            <p>все достопримечательности находятся очень близко</p>
+          <div class="reason attractions">красивая дорога!</div>
                 <div>№4</div>
-                <div>ехать в седону из лас вегаса совсем не скучно!</div>
-            <div>мало туристов</div>
+                <p>ехать в седону из лас вегаса совсем не скучно!</p>
+            <div class="reason attractions">мало туристов</div>
             <div>№5</div>
-            <div>большенство едет в гранд каньон и толпится там!</div>
-
-          <div class="reason">сувениры</div>
+          <p>большенство едет в гранд каньон и толпится там!</p>
         </div>
-      </div>
+           </div>
 
       <div class="booking">
-        <h2>Заинтересовали</h2>
-        <p>...</p>
+        <h2>Заинтересовались?</h2>
+        <p>укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="#" class="btn btn-brown">Поиск гостиницы в седоне</a>
       </div>
 
@@ -90,47 +94,45 @@
 
         <div class="booking-form">
           <div class="form-group">
-            <label for="">дата заезда<input type="text"></label>
+            <label>дата заезда<input type="text"></label>
           </div>
 
           <div class="form-group">
-            <label for="">дата выезда<input type="text"></label>
+            <label>дата выезда<input type="text"></label>
           </div>
 
-          <div class="form-group form-group-half-width">взрослые
-            <label for="">
-              <button>+</button>
+          <div class="form-group form-group-half-width">взрослые</div>
+            <label>
+              <button class="plus">+</button>
               <input type="text">
-              <button>-</button>
+              <button class="minus">-</button>
             </label>
           </div>
 
-          <div class="form-group form-group-half-width">дети
-            <label for="">
-              <button>+</button>
+          <div class="form-group form-group-half-width">дети</div>
+            <label>
+              <button class="plus">+</button>
               <input type="text">
-              <button>-</button>
+              <button class="minus">-</button>
             </label>
           </div>
 
-          <button type="submit" name="button">найти</button>
+          <button type="submit" name="button-see">найти</button>
         </div>
-      </div>
-    </main>
-
-
-    <footer>
-      <section>#VISITSEDONA</section>
-      <section>
+          </main>
+             <div class="container">
+            <footer class="main-footer">
+              <section class="graphic text">#VISITSEDONA</section>
+       <section class="main-section">
         <a href="#" class="btn social-btn">вконтакте</a>
         <a href="#" class="btn social-btn">fackbook</a>
         <a href="#" class="btn social-btn">YouTube</a>
       </section>
-      <section>
+      <section class="orientir">
         website by
-        <img src="#" alt="#">
+        <img src="#" alt="home site">
       </section>
     </footer>
   </div>
-</body>
+  </body>
 </html>
